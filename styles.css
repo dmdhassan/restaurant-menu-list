@@ -1,0 +1,113 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     background: #E8EEF2;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 15vh;
+}
+.underline {
+     background: #A69658;
+     width: 5rem;
+     height: .2rem;
+     border-radius: 5px;
+     margin: .5rem;
+}
+
+.section-center {
+     max-width: 1120px;
+     margin: 1rem auto;
+     display: grid;
+     grid: 2rem 3rem;
+     justify-items: center;
+}
+.menu-item {
+     display: grid;
+     gap: 1rem 2rem;
+     max-width: 25rem;
+     margin: 1rem;
+     }
+.photo {
+     object-fit: cover;
+     width: 100%;
+     border: 0.2rem solid #A69658;
+     border-radius: 10px;
+}
+.item-info header {
+     display: flex;
+     justify-content: space-between;
+     border-bottom: .2px solid #808080;
+     padding-bottom: 8px;
+     letter-spacing: 2px;
+}
+.price {
+     color: #A69658;
+}
+.item-text {
+     padding-top: 1rem;
+}
+
+.item-info {
+     margin: 0 .8rem;
+}
+
+@media (min-width: 768px) {
+     .menu-item {
+          grid-template-columns: 225px 1fr;
+          grid: 0 1.25rem;
+          max-width: 40rem;
+     }
+     .photo {
+          height: 175px;
+     }
+}
+
+@media (min-width: 1200px) {
+     .section-center {
+    width: 95vw;
+    grid-template-columns: 1fr 1fr;
+  }
+  .photo {
+    height: 150px;
+  }
+}
+
+.btn-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 2vh;
+}
+.filter-btn {
+     margin: .3rem;
+     padding: 1%;
+     border-color: #A69658;
+     border-radius: 5px;
+     background: #A69658;
+     color: white;
+     letter-spacing: 2px;
+     font-size: 1rem;
+}
+
+@media (min-width: 1000px) {
+     .filter-btn {
+          padding: 0.6%;
+     }
+     
+}
+
+.filter-btn:hover {
+     color: #A69658;
+     background: #fff;
+     border: 1px solid #ebbe0b;
+}
